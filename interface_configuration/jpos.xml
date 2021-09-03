@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JposEntries PUBLIC "-//JavaPOS//DTD//EN"
+                             "jpos/res/jcl.dtd">
+<JposEntries>
+    <JposEntry logicalName="JavaPOSScaleDevice">
+
+    Put a properly configured JavaPOSScaleDevice JposEntry
+    into the working jpos.xml. This is needed because the
+    logicalName JavaPOSScaleDevice is hardcoded into
+    HelloJavaPOSScale.jar.
+
+    Replace this comment text with contents for your scale device 
+    and interface.
+
+    Example contents are below.
+
+    Put this newly updated JavaPOSScaleDevice JposEntry into 
+    the working jpos.xml of
+        C:\Program Files\Datalogic\JavaPOS
+    or
+        /usr/local/Datalogic/JavaPOS
+
+    Test with JavaPOSTest by doing open, claim and beep in JavaPOSTest.
+    Next run your build of HelloJavaPOSScale.jar with
+        HelloJavaPOSScale.cmd
+    or
+        HelloJavaPOSScale.sh
+
+    </JposEntry>
+    <JposEntry logicalName="DL-Magellan-9800i-USB-OEM-Scale">
+        <creation factoryClass="com.dls.jpos.service.DLSScaleInstanceFactory" serviceClass="com.dls.jpos.service.DLSScaleService"/>
+        <vendor name="DLA" url="http://www.adc.datalogic.com"/>
+        <jpos category="Scale" version="1.13"/>
+        <product description="ScaleService" name="ScaleService" url="http://www.adc.datalogic.com"/>
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="canCompareFirmwareVersion" type="String" value="False"/>
+        <prop name="canNotifyPowerChange" type="String" value="True"/>
+        <prop name="canStatusUpdate" type="String" value="True"/>
+        <prop name="canUpdateFirmware" type="String" value="False"/>
+        <prop name="deviceBus" type="String" value="USB"/>
+        <prop name="deviceClass" type="String" value="USBScale"/>
+        <prop name="deviceDescription" type="String" value="DLS Magellan 9800i USB OEM Scale"/>
+        <prop name="deviceName" type="String" value="DLS Magellan 9800i Scale"/>
+        <prop name="displayRequired" type="String" value="True"/>
+        <prop name="enforceZeroReturn" type="String" value="False"/>
+        <prop name="fiveDigitWeight" type="String" value="True"/>
+        <prop name="fullDisable" type="String" value="False"/>
+        <prop name="indicateZeroWithLED" type="String" value="True"/>
+        <prop name="liveWeightPollRate" type="String" value="500"/>
+        <prop name="metricWeightMode" type="String" value="False"/>
+        <prop name="operationMode" type="String" value="0"/>
+        <prop name="productId" type="String" value="1511"/>
+        <prop name="scanControl" type="String" value="False"/>
+        <prop name="singleCable" type="String" value="False"/>
+        <prop name="usage" type="String" value="6e00"/>
+        <prop name="vendorId" type="String" value="05f9"/>
+        <prop name="vibrationSensitivity" type="String" value="2"/>
+        <prop name="zeroValid" type="String" value="True"/>
+    </JposEntry>
+</JposEntries>

@@ -4,4 +4,4 @@
 
 [Datalogic JavaPOS API](https://datalogic.github.io/javapos/overview), Overview
 
-[Developing with JavaPOS](https://datalogic.github.io/javapos/develop/overview)# HelloJavaPOSScale
+[Developing with JavaPOS](https://datalogic.github.io/javapos/develop/overview)
